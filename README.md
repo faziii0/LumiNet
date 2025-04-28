@@ -2,30 +2,33 @@
 
 A Multi-Modal Feature Fusion Network for 3D Object Detection
 
-# Code will be available Soon
+---
+
+# 🚀 Code Availability
+> Code will be available soon.
 
 <!-- 
 ![Fusion-new drawio](https://github.com/faziii0/LumiNet/assets/111413133/bfea5354-d194-4cfd-8ef4-138d72fb807f)
 -->
 
+---
 
+# 🖥️ Environment Setup
 
-# Environment Setup:
-Linux (tested on Ubuntu 22.04)
+- Linux (tested on Ubuntu 22.04)
+- Python 3.8
+- PyTorch 1.10 + CUDA 11.3
 
-Python 3.8
+---
 
-PyTorch 1.10 + CUDA-11.3
+# ⚙️ Installation
 
+To deploy this project, run:
 
-
-
-## Installation:
-
-To deploy this project run
-
-bash
+```bash
 git clone https://github.com/faziii0/LumiNet
+cd LumiNet
+
 
 
 bash
