@@ -25,7 +25,7 @@ A Multi-Modal Feature Fusion Network for 3D Object Detection
 
 To deploy this project, run:
 
-```bash
+
 git clone https://github.com/faziii0/LumiNet
 cd LumiNet
 
