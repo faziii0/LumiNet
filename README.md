@@ -32,8 +32,8 @@ cd LumiNet
 
 
 
-conda create -n liard python=3.8
-conda activate liard
+conda create -n luminet python=3.8
+conda activate luminet
 
 conda install pytorch=1.10.0 torchvision=0.11.0 torchaudio=0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
 conda install -c conda-forge cudatoolkit-dev
@@ -52,9 +52,9 @@ python run.py --model_type dpt_beit_large_512 --input_path image_2 --output_path
 # 📚 Dataset Preparation
 
 Please download the official [KITTI 3D object detection](https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d) dataset and  train mask from [Epnet++](https://github.com/happinesslz/EPNetV2)
+```
 
-
-LiARD
+LumiNet
 ├── data
 │   ├── KITTI
 │   │   ├── ImageSets
@@ -75,6 +75,7 @@ LiARD
 ├── pointdep_lirad
 ├── tools
 
+```
 
 
 ## Trained Model Evaluation
@@ -85,9 +86,9 @@ LiARD
 
 | Objects | Easy|Moderate     | Hard                   | 
 | :-------- | :------- | :----------- | :----------|
-| Car | 91.67% | 83.32% | 78.29%
-| Pedestrian | 00.0% | 00.0% | 0.00%
-| Cyclist | 00.0% | 00.0% | 00.0%
+| Car | 91.76% | 83.32% | 78.29%
+| Pedestrian | 53.54% | 45.26% | 41.55%
+| Cyclist | 80.43% | 62.31% | 55.72%
 
 3D Predicted labels are avialable from the above Google
 
