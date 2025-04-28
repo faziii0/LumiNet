@@ -45,19 +45,28 @@ python run.py --model_type dpt_beit_large_512 --input_path image_2 --output_path
 
 Please download the official [KITTI 3D object detection](https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d) dataset and  train mask from [Epnet++](https://github.com/happinesslz/EPNetV2)
 
-bash
+
 LiARD
 ├── data
 │   ├── KITTI
 │   │   ├── ImageSets
 │   │   ├── object
-│   │   │   ├──training
-│   │   │      ├──calib & velodyne & label_2 & image_2 & depth & train_mask
-│   │   │   ├──testing
-│   │   │      ├──calib & velodyne & image_2 & depth
+│   │   │   ├── training
+│   │   │   │   ├── calib
+│   │   │   │   ├── velodyne
+│   │   │   │   ├── label_2
+│   │   │   │   ├── image_2
+│   │   │   │   ├── depth
+│   │   │   │   ├── train_mask
+│   │   │   ├── testing
+│   │   │   │   ├── calib
+│   │   │   │   ├── velodyne
+│   │   │   │   ├── image_2
+│   │   │   │   ├── depth
 ├── lib
 ├── pointdep_lirad
 ├── tools
+
 
 ## Trained Model Evaluation
 
