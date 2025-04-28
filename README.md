@@ -31,13 +31,16 @@ cd LumiNet
 
 
 
-bash
-conda create -n liard python==3.8
+
+conda create -n liard python=3.8
 conda activate liard
-conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.cudatoolkit=11.3 -c pytorch -c conda-forge
+
+conda install pytorch=1.10.0 torchvision=0.11.0 torchaudio=0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
 conda install -c conda-forge cudatoolkit-dev
+
 pip install -r requirements.txt
 sh build_and_install.sh
+
 
 ## Depth Images
 We use [MiDaS](https://github.com/isl-org/MiDaS) pretrained model to covert image_2 into depth images or download it from here Google. You can clone their repo and run this command
